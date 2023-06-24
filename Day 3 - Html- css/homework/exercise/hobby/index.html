@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sở thích</title>
+    <link rel="stylesheet" href="./assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="./assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <main class="border border-5 border-info p-1" >
+        <h1 class="text-center bg-danger text-white my-1">SỞ THÍCH CỦA BẠN</h1>
+        <form action="#" method="GET" class="text-primary fw-bold fs-4">
+            <div class="name my-3">
+                <label for="name" class="col-2 text-end me-2">Họ và tên</label>
+                <input type="text" id="name" class="col-6 border-2 border-bottom border-end" name="username" required>
+            </div>
+            
+            <div class="email">
+                <label for="email"class="col-2 text-end me-2">Email</label>
+                <input type="email" id="email" class="col-4 border-2 border-bottom border-end" name="email" required>
+            </div>
+                        
+            <div class="d-flex mt-3">
+                <label for="hobby" class="col-2 text-end">Sở thích</label>
+                <div class="col-10 ms-3 text-warning fw-normal">
+                    <div class="hobby d-flex">
+                        <div class="col-4">
+                            <input type="checkbox" id="sport" name="hobby" value="sport">
+                            <label for="sport">Thể thao</label>
+                        </div>
+                        <div class="col-4">
+                            <input type="checkbox" id="music" name="hobby" value="music">
+                            <label for="music">Âm nhạc</label>
+                        </div>
+                        <div class="col-4">
+                            <input type="checkbox" id="readbook" name="hobby" value="readbook">
+                            <label for="readbook">Đọc sách</label>
+                        </div>
+                    </div>
+                    <div class="hobby d-flex">
+                        <div class="col-4">
+                            <input type="checkbox" id="web" name="hobby" value="web">
+                            <label for="web">Lướt web</label>
+                        </div>
+                        <div class="col-4">
+                            <input type="checkbox" id="game" name="hobby" value="game">
+                            <label for="game">Chơi game</label>
+                        </div>
+                        <div class="col-4">
+                            <input type="checkbox" id="film" name="hobby" value="film">
+                            <label for="film">Điện ảnh</label>
+                        </div>
+                    </div>
+                    <div class="hobby">
+                        <input type="checkbox" id="tour" name="hobby" value="tour">
+                        <label for="tour">Du lịch</label>
+                    </div>
+                    <div class="button mt-3 mb-2">
+                        <button class="border-2 border-top border-start">Gửi thông tin</button>
+                        <button class="border-2 border-top border-start ms-2">Nhập lại</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

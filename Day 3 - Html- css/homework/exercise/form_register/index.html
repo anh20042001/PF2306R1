@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body{
+            margin: 2rem;
+            font-size: 1.3rem;
+        }
+        label{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="POST">
+        <h2>Đăng ký</h2>
+        <label for="name">Họ và tên:</label><br>
+        <input type="text" id="name" size="20" name="username" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" size="20" name="email" required><br><br>
+        
+        <label for="phone">Số điện thoại:</label><br>
+        <input type="number" id="phone" name="phone" required><br><br>
+        
+        <label for="gender">Giới tính:</label><br>
+        <input type="radio" id="boy" name="gender" value="boy">
+        <label for="boy">Nam</label>
+        <input type="radio" id="girl" name="gender" value="girl">
+        <label for="girl">Nữ</label><br><br>
+
+        <input type="submit" value="Đăng ký">
+    </form>
+</body>
+</html>
