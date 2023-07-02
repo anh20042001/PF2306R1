@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank interest rate</title>
+</head>
+<body>
+    <script>
+        let amount = parseFloat(prompt("Please enter amount of money:"))
+        let interestRate = parseFloat(prompt("Please enter anual interest rate:"))
+        let noOfYear = parseFloat(prompt("Please enter number of year:"))
+        let anual_interest = amount * (interestRate / 100)
+        let total_AmountAfterYears = amount + noOfYear * anual_interest 
+        document.write('Total Amount is:' + total_AmountAfterYears) 
+    </script>
+</body>
+</html>
