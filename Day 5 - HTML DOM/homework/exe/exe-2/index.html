@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+    <input type="number" onchange="firstNumber(this)" placeholder="Please enter number first">
+    <input type="number" onchange="secondNumber(this)" placeholder="Please enter number second"><br><br>
+    <button id="checkAdd">Addition(+)</button>
+    <button id="checkSub">Subtraction(-)</button>
+    <button id="checkMul">Multiplication(X)</button>
+    <button id="checkDiv">Division(/)</button><br>
+    <p id="result"></p>
+    <script>
+        let checkAdd = document.getElementById("checkAdd");
+        let checkSub = document.getElementById("checkSub");
+        let checkMul = document.getElementById("checkMul");
+        let checkDiv = document.getElementById("checkDiv");
+        let result = document.getElementById("result");
+        let numberFirst, numberSecond;
+        function firstNumber(obj) {
+            numberFirst = Number(obj.value);
+        }
+        function secondNumber(obj) {
+            numberSecond = Number(obj.value);
+        }
+
+        checkAdd.addEventListener("click", function() {
+            result.innerText = "Result: " + (numberFirst + numberSecond);
+        })
+        checkSub.addEventListener("click", function() {
+            result.innerText = "Result: " + (numberFirst - numberSecond);
+        })
+        checkMul.addEventListener("click", function() {
+            result.innerText = "Result: " + (numberFirst * numberSecond);
+        })
+        checkDiv.addEventListener("click", function() {
+            result.innerText = "Result: " + (numberFirst / numberSecond);
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap year</title>
+</head>
+<body>
+    <input type="number" onchange="inputYear(this)">
+    <button type="button" id="showMessage">Check!!!</button>
+    <script>
+        let showMessage = document.getElementById("showMessage");
+        let year, number;
+        
+        function inputYear(obj) {
+            number = obj.value;
+            if (number < 0) {
+                alert ("Please enter a positive integer as a year");
+            } else {
+                year = parseInt(number);
+            }
+        }
+        showMessage.addEventListener("click", function () {
+            if (year % 4 == 0) {
+                if(year % 100 == 0) {
+                    if(year % 400 == 0) {
+                        alert(year + " is a leap year.");
+                    } else {
+                        alert(year + " is not a leap year.");
+                    }
+                } else { 
+                    alert(year + " is a leap year.");
+                }
+            } else {
+                alert(year + " is not a leap year.");
+            }
+        })
+        
+    </script>
+</body>
+</html>

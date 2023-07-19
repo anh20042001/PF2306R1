@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>element-interact-by-id</title>
+</head>
+<body>
+    <p id="demo-text">This is a demo text</p>
+    <script>
+        let demoText = document.getElementById("demo-text");
+        demoText.innerHTML = "<h1>Hello</h1>";
+        demoText.innerText = "<h1>Hello</h1>";
+        demoText.style.color = "red";
+        demoText.style.background = "yellow";
+        document.write(demoText.innerHTML);
+        document.write(demoText.innerText);
+        console.log(demoText);
+    </script>
+</body>
+</html>

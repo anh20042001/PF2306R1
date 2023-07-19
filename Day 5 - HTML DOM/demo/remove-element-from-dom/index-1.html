@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove element from dom</title>
+</head>
+<body>
+    <div class="container" id="content">
+        <p id="first-para">This is first paragraph</p>
+        <p id="second-para">This is second paragraph</p>
+        <p>This is third paragraph</p>
+    </div>
+    <script>
+        let contentDiv = document.getElementById("content");
+        let firstPara = document.getElementById("first-para");
+        let secondPara = document.getElementById("second-para");
+        //Method 1
+        secondPara.remove();
+        //Method 2
+        contentDiv.removeChild(firstPara);
+    </script>
+</body>
+</html>
